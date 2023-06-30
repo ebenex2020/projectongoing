@@ -1,0 +1,94 @@
+/** @format */
+
+.home {
+  height: 100vh;
+  background-image: url(../files/assets/home/background-home-desktop.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  padding: 25rem 10rem 0;
+  gap: 10rem;
+}
+
+.container-box {
+  display: flex;
+  flex-flow: column;
+  gap: 2.4rem;
+}
+
+.container h3,
+.container h1 {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.container h3 {
+  font-size: 2.8rem;
+  font-family: Barlow Condensed, sans-serif;
+  color: #d0d6f9;
+  letter-spacing: 0.4725rem;
+}
+
+.container h1 {
+  font-size: 15rem;
+  font-family: bellefair, serif;
+  color: #fff;
+}
+
+.container p {
+  color: #d0d6f9;
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-family: Barlow, sans-serif;
+  line-height: 3.2rem;
+  width: 90%;
+}
+
+.btn-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.btn {
+  font-size: 3.2rem;
+  font-family: bellefair, serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  background: none;
+  border: none;
+  width: 27.4rem;
+  height: 27.4rem;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s;
+}
+
+.btn::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* z-index: -1; */
+}
+
+.btn:hover::before {
+  transform: scale(1.5);
+  opacity: 0.1;
+}
