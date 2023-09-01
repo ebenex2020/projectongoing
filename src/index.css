@@ -1,5 +1,26 @@
 /** @format */
 
+:root {
+  --ff-bc: "Barlow Condensed", sans-serif;
+  --ff-b: "Barlow", sans-serif;
+  --ff-be: "Bellefair", serif;
+
+  --fw-sm: 300;
+  --fw-md: 400;
+  --fw-lg: 500;
+  --fw-exlg: 600;
+
+  --fs-thin: 1.4rem;
+  --fs-smlst: 1.6rem;
+  --fs-sm: 1.8rem;
+  --fs-md: 2.8rem;
+  --fs-lg: 10rem;
+
+  --cl-primary: #fff;
+  --cl-secondary: #d0d6f9;
+  --cl-tertiary: #0b0d17;
+}
+
 *,
 *::before,
 *::after {
@@ -10,5 +31,6 @@
 
 html {
   font-size: 62.5%;
-  /* overflow: hidden; */
+  overflow: hidden;
+  font-weight: var(--fw-md);
 }

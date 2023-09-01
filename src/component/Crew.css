@@ -1,0 +1,299 @@
+/** @format */
+
+/* :root {
+  --ff-bc: "Barlow Condensed", sans-serif;
+  --ff-b: "Barlow", sans-serif;
+  --ff-be: "Bellefair", serif;
+
+  --fw-sm: 300;
+  --fw-md: 400;
+  --fw-lg: 500;
+  --fw-exlg: 600;
+
+  --fs-thin: 1.4rem;
+  --fs-smlst: 1.6rem;
+  --fs-sm: 1.8rem;
+  --fs-md: 2.8rem;
+  --fs-lg: 10rem;
+
+  --cl-primary: #fff;
+  --cl-secondary: #d0d6f9;
+  --cl-tertiary: #0b0d17;
+} */
+
+.crew {
+  height: 100vh;
+  background-image: url(/public/assets/crew/background-crew-desktop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-weight: var(--fw-md);
+  padding: 3rem 0;
+}
+
+.box-container {
+  margin-top: 13rem;
+}
+
+.crew-container--header {
+  font-size: var(--fs-md);
+  font-family: var(--ff-bc);
+  font-weight: var(--fw-normal);
+  letter-spacing: 0.4725rem;
+  text-transform: uppercase;
+  margin-bottom: 16rem;
+  color: var(--cl-primary);
+  padding-left: 3rem;
+}
+
+.crew-container--header span {
+  opacity: 0.25;
+  font-weight: var(--fw-exlg);
+}
+
+.crew-details {
+  width: 50%;
+  padding-left: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.crew-role {
+  font-size: 3.2rem;
+  font-family: var(--ff-be);
+  opacity: 0.5;
+  text-transform: uppercase;
+  color: var(--cl-primary);
+  margin-bottom: 1.5rem;
+}
+
+.crew-name {
+  font-size: 5.2rem;
+  font-family: var(--ff-be);
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+  color: var(--cl-primary);
+}
+
+.crew-bio {
+  width: 90%;
+  font-size: var(--fs-sm);
+  font-family: var(--ff-b);
+  line-height: 3.2rem;
+  color: var(--cl-secondary);
+}
+
+.input {
+  display: flex;
+  gap: 2rem;
+  position: absolute;
+  bottom: 10rem;
+  left: 5rem;
+}
+
+.btn-crew {
+  padding: 1rem;
+  background: none;
+  border: none;
+  border-radius: 50%;
+  background-color: #d0d6f95c;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.crew-img {
+  width: 55rem;
+  position: absolute;
+  bottom: 0;
+  right: 8rem;
+}
+
+/*................media............*/
+
+@media (max-width: 1240px) {
+  .crew-name {
+    font-size: 4.2rem;
+  }
+
+  .crew-img {
+    width: 50rem;
+    right: 3rem;
+  }
+
+  .crew-details {
+    padding-left: 3rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .crew-role {
+    font-size: 2.8rem;
+  }
+
+  .crew-name {
+    font-size: 3.2rem;
+  }
+
+  .crew-bio {
+    width: 80%;
+    line-height: 2.8rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .crew {
+    padding: 0;
+  }
+
+  .box-container {
+    margin-top: 3rem;
+  }
+
+  .crew-container--header {
+    margin-bottom: 6rem;
+    padding-left: 3rem;
+  }
+
+  .crew-details {
+    width: 100%;
+    align-items: center;
+  }
+
+  .crew-img {
+    right: 25rem;
+    width: 27rem;
+  }
+
+  .input {
+    bottom: 48%;
+    left: 35%;
+  }
+
+  .btn-crew {
+    padding: 0.75rem;
+  }
+}
+
+@media (max-width: 660px) {
+  .crew {
+    padding: 3rem 0;
+  }
+
+  .crew-bio {
+    font-size: var(--fs-smlst);
+    line-height: 2.4rem;
+    width: 95%;
+  }
+
+  .crew-role {
+    font-size: 2rem;
+  }
+
+  .crew-name {
+    font-size: 3rem;
+  }
+
+  .input {
+    bottom: 44%;
+    left: 32%;
+  }
+
+  .crew-img {
+    right: 5rem;
+    width: 25rem;
+  }
+
+  .crew-details {
+    padding-left: 3rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .crew-details {
+    padding-left: 1rem;
+  }
+
+  .input {
+    bottom: 42%;
+    left: 25%;
+  }
+
+  .btn-crew {
+    padding: 0.65rem;
+  }
+}
+
+/* 
+
+/*................media
+
+@media (max-width: 1240px) {
+  .crew-name {
+    font-size: 4.8rem;
+  }
+
+  .crew-img {
+    height: 60%;
+    right: 5rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .crew-container--main {
+    padding-left: 2rem;
+  }
+
+  .crew-container--header {
+    padding-left: 1rem;
+  }
+
+  .crew-name {
+    font-size: 4rem;
+  }
+
+  .crew-bio {
+    font-size: var(--fs-smlst);
+  }
+
+  .crew-role {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .crew {
+    padding: 0;
+  }
+
+  .crew-container--header {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+  }
+
+  .crew-details {
+    width: 50%;
+    align-items: center;
+  }
+
+  .crew-bio {
+    width: auto;
+    text-align: center;
+  }
+
+  .crew-img {
+    height: 45%;
+    bottom: 0;
+    right: 0;
+    transform: translate(-50%, 50%);
+  }
+}
+
+@media (max-width: 660px) {
+  .home {
+    padding: 2rem 0;
+  }
+
+  .container {
+    margin-top: 7rem;
+  }
+} */
