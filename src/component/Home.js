@@ -41,10 +41,10 @@ function HomeDetails() {
 
 function Button() {
   return (
-    <NavLink to="/destination" style={{ textDecoration: "none" }}>
-      <div className="btn-box--home">
+    <div className="btn-box--home">
+      <NavLink to="/destination" style={{ textDecoration: "none" }}>
         <button className="btn-home">Explore</button>
-      </div>
-    </NavLink>
+      </NavLink>
+    </div>
   );
 }
