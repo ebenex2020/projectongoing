@@ -74,10 +74,24 @@ hr {
   background: none;
   border: none;
   transition: all 0.3s;
+  position: relative;
 }
 
-.btn-dest:hover {
-  border-bottom: 1px solid #fff;
+.btn-dest::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: -1.5rem;
+  pointer-events: none;
+  transition: all 0.3s;
+  opacity: 0;
+}
+
+.btn-dest:hover::after {
+  opacity: 1;
 }
 
 .dest-container--header {

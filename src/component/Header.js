@@ -25,6 +25,7 @@ const MainNav = styled.div`
     // width: 120%;
     height: 0.1rem;
     opacity: 0.15148;
+    display: block;
   }
 
   .btn-toggle {
@@ -66,6 +67,7 @@ const NavUnlisted = styled.ul`
   backdrop-filter: blur(4.0774227142333984rem);
   transition: transform 0.3s ease-in-out;
 
+
   a {
     text-decoration: none;
   }
@@ -75,12 +77,44 @@ const NavUnlisted = styled.ul`
     gap: 0.5rem;
     color: #fff;
     letter-spacing: 0.27rem;
-  }
+    position: relative;
+
+
+    &::after {
+    content: "";
+    height: 4px;
+    width: 100%;
+    background: #fff;
+    border-radius: 50px;
+    position: absolute;
+    left: 0;
+    bottom: -4rem;
+    // transform: scaleX(0)
+    transition: all .3s;
+    pointer-events: none;
+    opacity: 0;
+
+    }
+
+    &:hover::after{
+     opacity: 1;
+      // transform: scaleX(1)
+    }
+
+
+    
+  } 
+
 
   span {
     font-weight: 700;
     display: block;
   }
+
+  
+
+
+
 
  
 
